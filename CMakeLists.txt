@@ -21,6 +21,7 @@ find_package(OpenSSL REQUIRED)
 add_subdirectory(logger)
 add_subdirectory(v2xmessage)
 add_subdirectory(v2verifier-app)
+add_subdirectory(falcon-sim)
 
 #
 #set(SOURCE_FILES

@@ -1,0 +1,12 @@
+  {
+    "security": { "enabled": false },
+    "test": { "socket_host": "127.0.0.1", "socket_port": 47001 },
+    "scenario": {
+      "numVehicles": 1,
+      "numMessages": 100,
+      "signatureScheme": "falcon",
+      "falcon": { "fragmentBytes": 256, "compression": "none" }
+    }
+  }
+
+

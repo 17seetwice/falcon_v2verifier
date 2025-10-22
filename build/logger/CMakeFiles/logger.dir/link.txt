@@ -1,0 +1,2 @@
+/home/vboxuser/micromamba/envs/gr39/bin/x86_64-conda-linux-gnu-ar qc liblogger.a CMakeFiles/logger.dir/Log.cpp.o
+/home/vboxuser/micromamba/envs/gr39/bin/x86_64-conda-linux-gnu-ranlib liblogger.a

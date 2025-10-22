@@ -1,0 +1,11 @@
+{
+  "scenario": {
+    "numVehicles": 1,
+    "numMessages": 100,
+    "signatureScheme": "ecdsa",
+    "falcon": {
+      "fragmentBytes": 256,
+      "compression": "none"
+    }
+  }
+}

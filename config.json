@@ -1,0 +1,20 @@
+
+    {
+      "scenario": {
+        "numVehicles": 1,
+        "numMessages": 100,
+        "signatureScheme": "falcon",
+        "falcon": { "fragmentBytes": 256, "compression": "none" }
+      },
+      "security": {
+        "enabled": true,
+        "private_key_pem": "/home/vboxuser/v2verifier/falcon_certificate/falcon_srv.key",
+        "certificate_pem": "/home/vboxuser/v2verifier/falcon_certificate/falcon_srv.crt",
+        "ca_bundle_pem": "/home/vboxuser/v2verifier/falcon_certificate/falcon_CA.crt"
+      },
+      "test": {
+        "socket_host": "127.0.0.1",
+        "socket_port": 47001
+      }
+    }
+
