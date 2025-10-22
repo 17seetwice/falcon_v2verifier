@@ -211,3 +211,15 @@ TkGUI interface as a separate process.
 
 We encourage you to open a GitHub issue
 with any questions or problems using either graphical interface.
+
+## Falcon Automation & Metrics Toolkit
+
+For PQC latency measurements, build the auxiliary `falcon_sim` target included in this workspace:
+
+```bash
+cmake -S . -B build
+cmake --build build --target falcon_sim
+```
+
+The resulting executable (`build/falcon-sim/falcon_sim`) accepts the same CLI form as the legacy transmitter/receiver and honors environment variables such as `V2X_SIGNATURE_SCHEME`, `V2X_FALCON_FRAGMENT_BYTES`, and `V2X_PACKET_LOSS_RATE`. Use `scripts/run_remote_falcon.py` to automate transmitter/receiver launches, perform fragment-size sweeps, and capture completion latencies. Summaries can then be generated with `scripts/metrics_report.py`, and `analysis/report_template.md` provides a ready-made report scaffold. Falcon key material (hex-encoded) is packaged under `falcon_keys/` and decoded at runtime.
+# falcon_v2verifier
